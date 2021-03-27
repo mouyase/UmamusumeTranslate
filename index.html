@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="Umamusume DB Translate">
+    <meta property="og:title" content="赛马娘数据翻译工具">
     <meta property="og:type" content="website">
     <meta property="og:description" content="Translates master.mdb for in-game english translation">
-    <title>Umamusume DB Translate</title>
+    <title>赛马娘数据翻译工具</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous">
     <style type="text/css">
     html, body, .container {
@@ -22,7 +22,7 @@
   <body>
     <div class="container d-flex align-items-center">
       <div class="jumbotron">
-        <h2>Umamusume DB Translate</h2>
+        <h2>赛马娘数据翻译工具</h2>
         <p>
           This tool aims to provide translation to Umamusume ingame text by patching <code>text_data</code> table in <code>master.mdb</code> file.<br/>
           This process is done completely in the browser. To contribute or get more details, please check the <a href="https://github.com/FabulousCupcake/umamusume-db-translate">GitHub Repository</a>.
@@ -31,11 +31,16 @@
         <ol>
           <li>Locate your <code>master.mdb</code> file after clicking the button below</li>
           <small>By default it is located at <code>C:\Users\YourUsername\AppData\LocalLow\Cygames\umamusume\master\master.mdb</code></small>
+          <small>路径为 <code>%userprofile%\AppData\LocalLow\Cygames\umamusume\master</code></small>
           <li>Replace the game <code>master.mdb</code> file with the translated <code>master.mdb</code> file</li>
         </ol>
         <div class="text-center m-5">
           <input id="dbfile" type="file" hidden>
           <label for="dbfile" class="btn btn-lg btn-primary">Choose File</label>
+        </div>
+        <div class="text-center m-5">
+          <a href="dmmgameplayer://umamusume/cl/general/umamusume">启动赛马娘</a>
+          <label class="btn btn-lg btn-primary">启动赛马娘</label>
         </div>
         <h3>Notes and Caveats</h3>
         <ul>
